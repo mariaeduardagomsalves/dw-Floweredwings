@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="\vizualizacao.html" method="post">
+        <fieldset>
+            <legend>Cadastro de Produtos</legend>
+            <label for="nome">Nome do Produto:</label>
+            <input type="text" id="nome" required><br>
+
+            <label for="data_nasc">Data de Adição:</label>
+            <input type="text"
+            pattern="^(0[1-9]|[1-2][0-9]|3[0-1])/(0[1-9]|1[0-2])/([0-9]{4})$" title="Insira uma data no formato dd/mm/aaaa"
+            id="data_nasc" required placeholder="dd/mm/aaaa"><br>
+
+            <label for="email">Cor do Produto:</label>
+            <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+            id="email" name="email" required><br>
+
+            <label for="senha">Senha de Usuário:</label>
+            <input type="password" id="senha" name="senha" minlength="6" required><br>
+
+            <label for="genero">Modelo:</label>
+            <input type="radio" name="buque" value="buque"> Buquê
+            <input type="radio" name="materiaprima" value="materiaprima"> Matéria-Prima
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Descrição de Produto</legend>
+            <label for="pagamentos">Pagamentos:</label>
+            <select id="agamentos" name="pagamentos">
+                <option value="Cartao">Cartão de Crédito</option>
+                <option value="pix">Via PIX</option>
+                <option value="especie">Dinheiro em Espécie</option>
+                <option value="outros">Outros</option>
+                </select><br>
+
+                <label for="mensagem">Descrição da Entrega:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50"
+                placeholder="Digite sua mensagem aqui"></textarea><br>
+
+                <label for="anexo">Fotos da Mercadoria:</label><br>
+                <input type="file" name="arquivo"><br>
+
+                <label for="notificacao">Aceito receber notificações de resposta:</label>
+                <input type="checkbox" id="notificacao" name="notificacao" required><br>
+
+
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
