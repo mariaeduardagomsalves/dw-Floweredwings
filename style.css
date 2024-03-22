@@ -1,0 +1,252 @@
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 20px auto;
+    width: 400px; /* Adjust width as needed */
+  }
+  
+  legend {
+    font-weight: bold;
+    padding: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding in width */
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  /* Estilo geral do formulário */
+
+form {
+    width: 800px; /* Ajuste a largura conforme necessário */
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Estilo dos fieldsets */
+  
+  fieldset {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Estilo das legendas */
+  
+  legend {
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo dos rótulos */
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilo dos campos de texto */
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo dos botões de rádio */
+  
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Estilo do seletor */
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo da caixa de mensagem */
+  
+  textarea {
+    height: 100px;
+  }
+  
+  /* Estilo do botão de envio */
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Estilo do checkbox */
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Estilo do anexo */
+  
+  input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Personalização adicional */
+  
+  /* ... */
+
+  
+/* Estilo geral da página */
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  
+  /* Estilo dos fieldsets */
+  
+  fieldset {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Estilo das legendas */
+  
+  legend {
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo dos rótulos */
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilo dos campos de texto */
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo do seletor */
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo do checkbox */
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Estilo das seções de detalhes do carro */
+  
+  section {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo dos títulos das seções */
+  
+  h1, h2 {
+    margin-top: 0;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo das listas de detalhes */
+  
+  ul, ol {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  /* Estilo dos detalhes do contato */
+  
+  span {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  /* Personalização adicional */
+  
+  /* ... */
+  
+  /* Correções para o código HTML fornecido */
+  
+  /* Corrigindo a duplicação da palavra "Cartão" no seletor de pagamento */
+  
+  #pagamentos option[value="Cartao"] {
+    display: none;
+  }
+  
+  /* Adicionando estilo para o título da página */
+  
+  h1 {
+    text-align: center;
+  }
+  
+  /* Adicionando espaçamento entre as seções */
+  
+  section {
+    margin-top: 20px;
+  }
