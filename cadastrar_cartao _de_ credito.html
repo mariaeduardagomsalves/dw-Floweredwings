@@ -8,24 +8,24 @@
 </head>
 <body>
     <fieldset>
-        <legend>Informações do Cartão:</legend>
-        <label for="numero">Número do Cartão: </label>
+        <h4><legend>Informações do Cartão:</legend></h4>
+        <h7><label for="numero">Número do Cartão: </label></h7>
         <input type="text" id="numero" required><br>
 
-        <label for="data_validade">Data de Validade:</label>
+        <h7><label for="data_validade">Data de Validade:</label></h7>
         <input type="text"
         pattern="^(0[1-9]|[1-2][0-9]|3[0-1])/(0[1-9]|1[0-2])/([0-9]{4})$" title="Insira uma data no formato dd/mm/aaaa"
         id="data_validade" required placeholder="mm/aaaa"><br>
 
-        <label for="codigo">Codigo de Segurança:</label>
+        <h7><label for="codigo">Codigo de Segurança:</label></h7>
         <input type="codigo" pattern="^(0[1-9]|[1-2][0-9]|3[0-1])/(0[1-9]|1[0-2])/([0-9]{4})$"
         id="codigo" required placeholder="cvv/cvc/cid"><br>
 
     </fieldset>
 
     <fieldset>
-        <legend>Descrição do Cartão:</legend>
-        <label for="pagamentos">Pagamentos:</label>
+        <h4><legend>Descrição do Cartão:</legend></h4>
+        <h7><label for="pagamentos">Pagamentos:</label></h7>
         <select id="pagamentos" name="pagamentos">
             <option value="Cartão">Cartão de Debito</option>
             <option value="Cartao">Cartão de Crédito</option>
@@ -34,7 +34,7 @@
             <option value="outros">Outros</option>
             </select><br>
 
-            <label for="notificacao">Lembre-se desse cartão para uso posterior</label>
+            <h7><label for="notificacao">Lembre-se desse cartão para uso posterior</label></h7>
             <input type="checkbox" id="notificacao" name="notificacao" required><br>
     </fieldset>
 </body>

@@ -9,24 +9,24 @@
 <body>
     <fieldset>
         <h4><legend>Cadastrar Cartões de Crédito:<h4></legend>
-        <label for="nome"></label>
+        <h7><label for="nome">Nome:</label></h7>
         <input type="text" id="nome" required><br>
 
-        <label for="data_nasc">Data de Nascimento:</label>
+        <h7><label for="data_nasc">Data de Nascimento:</label></h7>
         <input type="text"
         pattern="^(0[1-9]|[1-2][0-9]|3[0-1])/(0[1-9]|1[0-2])/([0-9]{4})$" title="Insira uma data no formato dd/mm/aaaa"
         id="data_nasc" required placeholder="dd/mm/aaaa"><br>
 
-        <label for="email">Email:</label>
+        <h7><label for="email">Email:</label></h7>
         <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
         id="email" name="email" required><br>
 
-        <label for="senha">Senha:</label>
+        <h7><label for="senha">Senha:</label></h7>
         <input type="password" id="senha" name="senha" minlength="6" required><br>
 
-        <label for="genero">Genêro:</label>
-        <h5><input type="radio" name="genero" value="masculino"> Masculino</h5>
-        <h5><input type="radio" name="genero" value="feminino"> Feminino</h5>
+        <h4><label for="genero">Genêro:</label></h4>
+        <h7><input type="radio" name="genero" value="masculino"> Masculino</h7>
+        <h7><input type="radio" name="genero" value="feminino"> Feminino</h7>
 
     </fieldset>
 </body>

@@ -201,37 +201,36 @@ body {
   
   /* Estilo dos títulos das seções */
   
-  h1, h2 {
+  h1,h2 {
     margin-top: 0;
-    color:blueviolet;
+    color:#2C51B9;
   }
 
     /* Adicionando estilo para o título da página */
   
   h1 {
       text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight:500;
     }
   
   h7 {
-    font-style: italic;
     margin-top: 0;
-    color:rgb(195, 0, 255); 
+    color: #6582B1;
+    ; 
   }
 
   h3 {
     margin-bottom: 10px;
-    color:rgb(0, 55, 128);
+    color:#786DC2;
   }
 
   h4 {
     margin-bottom: 10px;
-    color:rgb(35, 126, 246);
+    color: #4064cb;
   }
 
-  h5{
-    margin-bottom: 10px;
-    color:rgb(161, 114, 205);
-  }
+  
 
 
   /* Estilo das listas de detalhes */
