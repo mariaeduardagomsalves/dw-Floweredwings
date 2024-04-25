@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
 </head>
 <body>
     <form action="\vizualizacao.html" method="post">
+
         <fieldset>
             <h3><legend>Cadastro de Produtos</legend><h3>
             <h4><label for="nome">Nome do Produto:</label><h4>
@@ -18,16 +19,8 @@
             pattern="^(0[1-9]|[1-2][0-9]|3[0-1])/(0[1-9]|1[0-2])/([0-9]{4})$" title="Insira uma data no formato dd/mm/aaaa"
             id="data_nasc" required placeholder="dd/mm/aaaa"><br>
 
-            <h4><label for="email">Cor do Produto:</label></h4>
-            <h4><input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-                id="email" name="email" required><br></h4>
-                
             <label for="senha">Senha de Usuário:</label>
             <input type="password" id="senha" name="senha" minlength="6" required><br>
-
-            <label for="genero">Modelo:</label>
-            <h5><input type="radio" name="buque" value="buque"> Buquê<h5>
-            <h5><input type="radio" name="materiaprima" value="materiaprima"> Matéria-Prima<h5>
 
         </fieldset>
 
@@ -50,8 +43,6 @@
 
                 <label for="notificacao">Aceito receber notificações de resposta:</label>
                 <input type="checkbox" id="notificacao" name="notificacao" required><br>
-
-
         </fieldset>
         <button type="submit">Enviar</button>
     </form>
