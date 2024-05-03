@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <form action="\vizualizacao.html" method="post">
 
         <fieldset>
-            <h3><legend>Cadastro de Produtos</legend><h3>
-            <h4><label for="nome">Nome do Produto:</label><h4>
-            <input type="text" id="nome" required><br>
-
-            <h4><label for="data_nasc">Data de Adição:</label></h4>
-            <input type="text"
-            pattern="^(0[1-9]|[1-2][0-9]|3[0-1])/(0[1-9]|1[0-2])/([0-9]{4})$" title="Insira uma data no formato dd/mm/aaaa"
-            id="data_nasc" required placeholder="dd/mm/aaaa"><br>
-
-            <label for="senha">Senha de Usuário:</label>
-            <input type="password" id="senha" name="senha" minlength="6" required><br>
-
+            <h3>
+                <legend>Cadastro de Produtos</legend>
+            </h3>
+            <h4><label for="nome">Nome do Produto:</label>
+                <input type="text" id="nome" required><br>
+            </h4>
+            <h4><label for="senha">Senha de Usuário:</label>
+                <input type="password" id="senha" name="senha" minlength="6" required><br>
+            </h4>
         </fieldset>
 
         <fieldset>
-            <legend>Descrição de Produto</legend>
-            <label for="pagamentos">Pagamentos:</label>
-            <select id="agamentos" name="pagamentos">
-                <option value="Cartao">Cartão de Crédito</option>
-                <option value="pix">Via PIX</option>
-                <option value="especie">Dinheiro em Espécie</option>
-                <option value="outros">Outros</option>
+            <h3>
+                <legend>Descrição de Produto</legend>
+            </h3>
+            <h4><label for="pagamentos">Pagamentos:</label>
+                <select id="agamentos" name="pagamentos">
+                    <option value="Cartao">Cartão de Crédito</option>
+                    <option value="pix">Via PIX</option>
+                    <option value="especie">Dinheiro em Espécie</option>
+                    <option value="outros">Outros</option>
                 </select><br>
+            </h4>
 
-                <label for="mensagem">Descrição da Entrega:</label>
+            <h4><label for="mensagem">Descrição da Entrega:</label>
                 <textarea id="mensagem" name="mensagem" rows="4" cols="50"
-                placeholder="Digite sua mensagem aqui"></textarea><br>
-
-                <label for="anexo">Fotos da Mercadoria:</label><br>
+                    placeholder="Digite sua mensagem aqui"></textarea><br>
+            </h4>
+            <h4><label for="anexo">Fotos da Mercadoria:</label><br>
                 <input type="file" name="arquivo"><br>
-
+            </h4>
+            <h4>
                 <label for="notificacao">Aceito receber notificações de resposta:</label>
                 <input type="checkbox" id="notificacao" name="notificacao" required><br>
+            </h4>
         </fieldset>
         <button type="submit">Enviar</button>
     </form>

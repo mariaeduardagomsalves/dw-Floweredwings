@@ -1,43 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <fieldset>
-        <h4><legend>Informações do Cartão:</legend></h4>
-        <h7><label for="numero">Número do Cartão: </label></h7>
-        <input type="text" id="numero" required><br>
+        <h3>
+            <legend>Informações do Cartão:</legend>
+            <h4>
+                <label for="numero">Número do Cartão:</label>
+                <input type="text" id="numero" required><br>
+            </h4>
 
-        <h7><label for="data_validade">Data de Validade:</label></h7>
-        <input type="text"
+            <h4><label for="data_validade">Data de Validade:</label>
+                <select id="mes_val" name="mes_val" class="data_cartao">
+                    <option value="mes" selected>Mês</option>
+                    <option value="m1">1</option>
+                    <option value="m2">2</option>
+                    <option value="m3">3</option>
+                    <option value="m4">4</option>
+                    <option value="m5">5</option>
+                    <option value="m6">6</option>
+                    <option value="m7">7</option>
+                    <option value="m8">8</option>
+                    <option value="m9">9</option>
+                    <option value="m10">10</option>
+                    <option value="m11">11</option>
+                    <option value="m12">12</option>
+                </select>
+
+                <select id="ano_val" name="ano_val" class="data_cartao">
+                    <option value="ano" selected>Ano</option>
+                    <option value="a2024">2024</option>
+                    <option value="a2025">2025</option>
+                    <option value="a2026">2026</option>
+                    <option value="a2027">2027</option>
+                    <option value="a2028">2028</option>
+                    <option value="a2029">2029</option>
+                    <option value="a2030">2030</option>
+                    <option value="a2031">2031</option>
+                    <option value="a2032">2032</option>
+                    <option value="a2033">2033</option>
+                    <option value="a2034">2034</option>
+                    <option value="a2035">2035</option>
+                    <option value="a2036">2036</option>
+                    <option value="a2037">2037</option>
+                    <option value="a2038">2038</option>
+                    <option value="a2039">2039</option>
+                    <option value="a2040">2040</option>
+                    <option value="a2041">2041</option>
+                    <option value="a2042">2042</option>
+                    <option value="a2043">2043</option>
+                    <option value="a2044">2044</option>
+                    <option value="a2045">2045</option>
+                    <option value="a2046">2046</option>
+                    <option value="a2047">2047</option>
+                    <option value="a2048">2048</option>
+                    <option value="a2049">2049</option>
+                    <option value="a2050">2050</option>
+                </select>
+
+                <!--<input type="text"
         pattern="^(0[1-9]|[1-2][0-9]|3[0-1])/(0[1-9]|1[0-2])/([0-9]{4})$" title="Insira uma data no formato dd/mm/aaaa"
-        id="data_validade" required placeholder="mm/aaaa"><br>
+        id="data_validade" required placeholder="mm/aaaa">--><br>
+            </h4>
 
-        <h7><label for="codigo">Codigo de Segurança:</label></h7>
-        <input type="codigo" pattern="^(0[1-9]|[1-2][0-9]|3[0-1])/(0[1-9]|1[0-2])/([0-9]{4})$"
-        id="codigo" required placeholder="cvv/cvc/cid"><br>
-
+            <h4><label for="codigo">Código de Segurança:</label>
+                <input type="text" pattern="^\d{3,4}$" id="codigo" required placeholder="cvv" maxlength="4"><br>
+            </h4>
     </fieldset>
 
     <fieldset>
-        <h4><legend>Descrição do Cartão:</legend></h4>
-        <h7><label for="pagamentos">Pagamentos:</label></h7>
-        <select id="pagamentos" name="pagamentos">
-            <option value="Cartão">Cartão de Debito</option>
-            <option value="Cartao">Cartão de Crédito</option>
-            <option value="pix">Via PIX</option>
-            <option value="especie">Dinheiro em Espécie</option>
-            <option value="outros">Outros</option>
+        <h3>
+            <legend>Descrição do Cartão:</legend>
+        </h3>
+
+        <h4><label for="pagamentos">Pagamentos:</label>
+            <select id="pagamentos" name="pagamentos">
+                <option value="Cartão">Cartão de Debito</option>
+                <option value="Cartao">Cartão de Crédito</option>
+                <option value="pix">Via PIX</option>
+                <option value="especie">Dinheiro em Espécie</option>
+                <option value="outros">Outros</option>
             </select><br>
+        </h4>
 
-            <button onclick="remCard()">Remover Cartão</button>
+        <button onclick="remCard()">Remover Cartão</button>
 
-            <h7><label for="notificacao">Lembre-se desse cartão para uso posterior</label></h7>
+        <h4><label for="notificacao">Lembre-se desse cartão para uso posterior</label>
             <input type="checkbox" id="notificacao" name="notificacao" required><br>
+        </h4>
     </fieldset>
 </body>
+
 </html>
