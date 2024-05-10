@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Criação de Conta</title>
+</head>
+<body>
+  <h1>Criação de Conta</h1>
+
+  <form action="#">
+    <h4><label for="nome">Nome Completo:</label></h4>
+    <input type="text" id="nome" name="nome" required>
+
+    <h4><label for="email">Email:</label></h4>
+    <input type="email" id="email" name="email" required>
+
+    <h4><label for="senha">Senha:</label></h4>
+    <input type="password" id="senha" name="senha" required>
+
+    <h4><label for="confirmarSenha">Confirmar Senha:</label></h4>
+    <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+
+    <div class="checkbox">
+        <h4><label for="aceiteTermos">Aceito os <a href="#">Termos e Condições</a></label></h4>
+      <input type="checkbox" id="aceiteTermos" name="aceiteTermos" required>
+    </div>
+
+    <button type="submit">Criar Conta</button>
+    <button type="submit">Recuperar Senha</button>
+    <button type="submit">Sair</button>
+  </form>
+
+  <div class="links">
+    <h4>Já possui uma conta? <a href="#">Entrar</a></h4>
+  </div>
+</body>
+</html>
+
