@@ -133,6 +133,7 @@ form {
 body {
     font-family: sans-serif;
     margin: 20px;
+    background-color: #E8EBF6;
   }
   
   /* Estilo dos fieldsets */
@@ -269,3 +270,32 @@ body {
   section {
     margin-top: 20px;
   }
+
+        /* Estilo base para a tabela */
+table {
+  border: 1px solid #4064cb;  
+  width: 100%; /* Ocupa toda a largura disponível */
+  border-collapse: collapse; /* Remove bordas entre células */
+  margin: 20px auto; /* Adiciona margem superior e inferior, e centraliza na página */
+    
+}
+
+/* Estilo para o cabeçalho da tabela */
+th {
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    padding: 10px; /* Aumenta o espaçamento interno das células */
+    text-align: center; /* Alinha o texto ao centro */
+    border: 1px solid #4064cb; /* Adiciona borda fina cinza */
+}
+
+/* Estilo para o corpo da tabela */
+td {
+    padding: 8px; /* Aumenta o espaçamento interno das células */
+    border: 1px solid #4064cb; /* Adiciona borda fina cinza */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.grade_precos{
+    display: flex;
+    align-items: center;
+}
