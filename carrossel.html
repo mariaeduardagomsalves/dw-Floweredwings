@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buquês</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+  </head>
+
+
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #a57bb5;
+  color: #ffffff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.carousel {
+  position: relative;
+  max-width: 400px;
+  margin: 30px auto;
+  overflow: hidden;
+  border: 1px solid #dddddd;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 80%;
+  box-sizing: border-box;
+}
+
+.carousel-slide img {
+  width: 80%;
+  display: block;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.carousel-slide h2, .carousel-slide p {
+  text-align: center;
+  margin: 10px 0;
+}
+  </style>
+
+  <script>
+    //Declara uma variável currentSlide e a inicializa com o valor 0. Esta variável irá rastrear o índice do slide atualmente exibido no carrossel.
+let currentSlide = 0;
+
+//Define uma função chamada showSlide que recebe um parâmetro index. Esta função será responsável por exibir o slide correspondente ao índice fornecido.
+function showSlide(index) {
+    //Seleciona todos os elementos com a classe carousel-slide e armazena-os na constante slides. Isso cria uma lista (NodeList) de todos os slides do carrossel.
+    const slides = document.querySelectorAll('.carousel-slide');
+    //Se index for maior ou igual ao número de slides, define currentSlide como 0 (voltando ao primeiro slide).
+    if (index >= slides.length) {
+        currentSlide = 0;
+    //Se index for menor que 0, define currentSlide como o índice do último slide.    
+    } else if (index < 0) {
+        currentSlide = slides.length - 1;
+    //Caso contrário, define currentSlide com o valor de index.
+    } else {
+        currentSlide = index;
+    }
+    //Calcula o deslocamento (em porcentagem) necessário para exibir o slide atual. Multiplica o índice do slide atual (currentSlide) por -100, porque cada slide ocupa 100% da largura do contêiner.
+    const offset = -currentSlide * 100;
+    
+    //Aplica a transformação CSS translateX ao contêiner do carrossel para mover os slides horizontalmente e exibir o slide atual. O valor de offset é usado para deslocar o contêiner para a posição correta.
+    document.querySelector('.carousel-container').style.transform = `translateX(${offset}%)`;
+}
+
+//Define uma função nextSlide que incrementa o valor de currentSlide em 1 e chama a função showSlide com o novo valor. Isso exibe o próximo slide.
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
+// Define uma função prevSlide que decrementa o valor de currentSlide em 1 e chama a função showSlide com o novo valor. Isso exibe o slide anterior.
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}
+
+//Adiciona um event listener para o evento DOMContentLoaded, que é disparado quando o documento HTML foi completamente carregado e analisado. Quando este evento ocorre, a função anônima é executada, chamando showSlide com o valor inicial de currentSlide (0). Isso garante que o primeiro slide seja exibido quando a página for carregada.
+document.addEventListener('DOMContentLoaded', () => {
+    showSlide(currentSlide);
+});
+  </script>
+  <body>
+    <header>
+      <h1>Fazer Pedido</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="carousel">
+        <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+        <div class="carousel-container">
+          <div class="carousel-slide active">
+            <img src="img/cetin.jpeg" alt="Buquê de Cetin">
+            <h2>Buquê de Cetin</h2>
+            <p>Buquê na cor lilás e borboletas roxas</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="img/Impresso.jpg2024-05-16 at 15.12.56.jpeg" alt="Buquê Impresso">
+            <h2>Buquê Impresso</h2>
+            <p>Buquê com borboletas azuis</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="img/cartolina.jpeg" alt="Buquê Cartolina">
+            <h2>Buquê Cartolina</h2>
+            <p>Buquê com borboletas azul claro</p>
+          </div>
+        </div>
+        <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+      </section>
+    </main>
+  </body>
+</html>
